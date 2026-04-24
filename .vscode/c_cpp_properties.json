@@ -1,0 +1,61 @@
+{
+  "configurations": [
+    {
+      "name": "Qt6 MSVC 2022 x64",
+      "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+      "intelliSenseMode": "windows-msvc-x64",
+      "cppStandard": "c++20",
+      "cStandard": "c17",
+      "compileCommands": "${workspaceFolder}/build_AGENDA_msvc/compile_commands.json",
+      "includePath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/source",
+        "${workspaceFolder}/mocks",
+        "C:/Qt/6.11.0/msvc2022_64/include",
+        "C:/Qt/6.11.0/msvc2022_64/include/QtCore",
+        "C:/Qt/6.11.0/msvc2022_64/include/QtGui",
+        "C:/Qt/6.11.0/msvc2022_64/include/QtWidgets",
+        "C:/Qt/6.11.0/msvc2022_64/include/QtSql",
+        "C:/Qt/6.11.0/msvc2022_64/include/QtPrintSupport"
+      ],
+      "defines": [
+        "UNICODE",
+        "_UNICODE",
+        "QT_CORE_LIB",
+        "QT_GUI_LIB",
+        "QT_WIDGETS_LIB",
+        "QT_SQL_LIB",
+        "QT_PRINTSUPPORT_LIB"
+      ]
+    },
+    {
+      "name": "Qt6 MinGW x64",
+      "compilerPath": "C:/Qt/Tools/mingw1310_64/bin/g++.exe",
+      "intelliSenseMode": "windows-gcc-x64",
+      "cppStandard": "c++20",
+      "cStandard": "c17",
+      "compileCommands": "${workspaceFolder}/build_AGENDA_mingw/compile_commands.json",
+      "includePath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/source",
+        "${workspaceFolder}/mocks",
+        "C:/Qt/6.11.0/mingw_64/include",
+        "C:/Qt/6.11.0/mingw_64/include/QtCore",
+        "C:/Qt/6.11.0/mingw_64/include/QtGui",
+        "C:/Qt/6.11.0/mingw_64/include/QtWidgets",
+        "C:/Qt/6.11.0/mingw_64/include/QtSql",
+        "C:/Qt/6.11.0/mingw_64/include/QtPrintSupport"
+      ],
+      "defines": [
+        "UNICODE",
+        "_UNICODE",
+        "QT_CORE_LIB",
+        "QT_GUI_LIB",
+        "QT_WIDGETS_LIB",
+        "QT_SQL_LIB",
+        "QT_PRINTSUPPORT_LIB"
+      ]
+    }
+  ],
+  "version": 4
+}

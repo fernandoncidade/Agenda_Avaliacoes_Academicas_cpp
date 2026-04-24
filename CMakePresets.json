@@ -1,0 +1,48 @@
+
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "qt-mingw",
+      "displayName": "Qt 6.11.0 MinGW 64-bit",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build_AGENDA_mingw",
+      "environment": {
+        "PATH": "C:/Qt/6.11.0/mingw_64/bin;C:/Qt/Tools/mingw1310_64/bin;C:/Qt/Tools/Ninja;$penv{PATH}"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_PREFIX_PATH": "C:/Qt/6.11.0/mingw_64",
+        "CMAKE_INSTALL_PREFIX": "D:/MISCELANEAS/VSCode/AGENDA/AgendaAvaliacoesAcademicas_mingw",
+        "AGENDA_DEPLOY_DIR": "D:/MISCELANEAS/VSCode/AGENDA/AgendaAvaliacoesAcademicas_mingw",
+        "AGENDA_QT_BIN_DIR": "C:/Qt/6.11.0/mingw_64/bin",
+        "CMAKE_CXX_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/g++.exe",
+        "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/Ninja/ninja.exe"
+      }
+    },
+    {
+      "name": "qt-msvc",
+      "displayName": "Qt 6.11.0 MSVC 2022 64-bit",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build_AGENDA_msvc",
+      "environment": {
+        "VSLANG": "1033",
+        "PATH": "C:/Qt/6.11.0/msvc2022_64/bin;C:/Qt/Tools/Ninja;$penv{PATH}"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_PREFIX_PATH": "C:/Qt/6.11.0/msvc2022_64",
+        "CMAKE_INSTALL_PREFIX": "D:/MISCELANEAS/VSCode/AGENDA/AgendaAvaliacoesAcademicas_msvc",
+        "AGENDA_DEPLOY_DIR": "D:/MISCELANEAS/VSCode/AGENDA/AgendaAvaliacoesAcademicas_msvc",
+        "AGENDA_QT_BIN_DIR": "C:/Qt/6.11.0/msvc2022_64/bin",
+        "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/Ninja/ninja.exe"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "qt-mingw", "configurePreset": "qt-mingw" },
+    { "name": "qt-msvc", "configurePreset": "qt-msvc" }
+  ]
+}

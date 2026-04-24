@@ -1,0 +1,24 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": false,
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.configurePreset": "qt-msvc",
+  "cmake.buildPreset": "qt-msvc",
+  "cmake.buildBeforeRun": true,
+  "cmake.options.statusBarVisibility": "visible",
+  "makefile.configureOnOpen": false,
+  "makefile.configureOnEdit": false,
+  "makefile.configureAfterCommand": false,
+  "makefile.buildBeforeLaunch": false,
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build_AGENDA_msvc/compile_commands.json",
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+  "C_Cpp.errorSquiggles": "enabled",
+  "files.associations": {
+    "*.hpp": "cpp",
+    "*.ipp": "cpp",
+    "*.tpp": "cpp"
+  }
+}

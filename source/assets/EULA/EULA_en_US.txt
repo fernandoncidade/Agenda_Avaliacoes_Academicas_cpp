@@ -1,0 +1,49 @@
+NOTICE FOR EXECUTABLE DISTRIBUTION - ACADEMIC ASSESSMENTS SCHEDULE
+Version 2026.4.24.0, April 24, 2026
+
+This notice accompanies the Windows executable distribution of the Software. The Software itself is licensed under the GNU Lesser General Public License, version 3 ("GNU LGPL v3"), as published in the LICENSE file. This document is complementary and informational only; it does not replace, narrow or override the rights granted by the GNU LGPL v3.
+
+1. DEFINITIONS
+   "Copyright Holder": Fernando Nillsson Cidade, original author of the Software.
+   "Software": ACADEMIC ASSESSMENTS SCHEDULE, including source code, compiled executable, embedded resources and project documentation distributed with it.
+   "Distribution Package": the set of files delivered to the recipient, which may include the executable, assets, licenses, notices and third-party runtime components.
+   "You": the natural or legal person who receives, uses or redistributes the Software.
+
+2. PROJECT LICENSE
+   - The Software is licensed under GNU LGPL v3. The LICENSE file is the authoritative legal text for the project.
+   - Subject to that license, you may use, study, copy, modify and redistribute the Software.
+   - If you distribute modified or unmodified copies, preserve the applicable copyright and license notices and comply with the obligations imposed by the GNU LGPL v3 and by the licenses of bundled third-party components.
+
+3. DISTRIBUTION ENVIRONMENT
+   - The Software may be distributed as a Windows executable built with C++20, Qt 6 and CMake.
+   - The end user does not need to install a compiler, the Qt SDK or development libraries to run the standard executable distribution; applicable runtime dependencies may accompany the package.
+   - Where the build dynamically links LGPL-covered components such as Qt libraries and plugins, recipients must remain able to replace those components with compatible versions as required by the applicable licenses.
+
+4. SOURCE CODE AND LICENSE MATERIALS
+   - The distribution package should include or reference LICENSE, NOTICE and LICENSES materials.
+   - The corresponding source for the main project should accompany the distribution or be available through the related source repository or official source delivery channel.
+   - Third-party components remain governed by their own licenses; follow the relevant notices for any source-availability, attribution or redistribution obligations.
+
+5. FEATURES AND DATA STORAGE
+   - The Software stores user data and settings locally, for example in a local SQLite database, JSON configuration files, custom lists and exported PDF files.
+   - The standard executable does not automatically transmit telemetry to external servers.
+   - Any future optional integration that transmits data must be documented separately and should require explicit user action or consent.
+
+6. WARRANTY AND LIABILITY
+   - The Software is provided "AS IS", without express or implied warranties, to the extent permitted by applicable law and consistent with the GNU LGPL v3 and other applicable licenses.
+   - Nothing in this notice removes non-waivable statutory rights that may apply to a recipient under local law.
+
+7. TRADEMARKS AND OFFICIAL DISTRIBUTIONS
+   - The GNU LGPL v3 does not grant trademark rights in the project's names, logos or official visual identity.
+   - Redistribution of the Software under the GNU LGPL v3 is permitted, but use of project marks in a way that suggests endorsement, affiliation or official distribution requires authorization from the right holder.
+
+8. PRIVACY AND DATA PROTECTION
+   - Personal data handling for the standard executable is described in the Privacy Policy delivered with the distribution package.
+   - It is the responsibility of the user or organization to maintain backups of their local data and exported documents.
+
+9. PREVAILING TERMS
+   - If any statement in this notice conflicts with the LICENSE file or an applicable third-party license, the LICENSE file or the applicable third-party license prevails.
+   - This notice does not create additional restrictions on the exercise of rights already granted by the GNU LGPL v3.
+
+Contact for information and support: as indicated in the distribution package.
+Author / Contact: Fernando Nillsson Cidade — Email: linceu_lighthouse@outlook.com

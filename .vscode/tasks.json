@@ -1,0 +1,197 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Qt6: Compilar & Executar AGENDA (MSVC)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Qt6: Compilar AGENDA (MSVC)",
+        "Qt6: Executar AGENDA (MSVC)"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qt6: Compilar AGENDA (MSVC)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "msvc",
+        "-Action",
+        "BuildAgenda"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      }
+    },
+    {
+      "label": "Qt6: Executar AGENDA (MSVC)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "msvc",
+        "-Action",
+        "RunAgenda"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qt6: VersionEditor (MSVC)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "msvc",
+        "-Action",
+        "VersionEditor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Qt6: CompileTranslations (MSVC)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "msvc",
+        "-Action",
+        "CompileTranslations"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Qt6: Compilar & Executar AGENDA (MinGW)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Qt6: Compilar AGENDA (MinGW)",
+        "Qt6: Executar AGENDA (MinGW)"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Qt6: Compilar AGENDA (MinGW)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "mingw",
+        "-Action",
+        "BuildAgenda"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$gcc",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      }
+    },
+    {
+      "label": "Qt6: Executar AGENDA (MinGW)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "mingw",
+        "-Action",
+        "RunAgenda"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qt6: VersionEditor (MinGW)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "mingw",
+        "-Action",
+        "VersionEditor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "Qt6: CompileTranslations (MinGW)",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/qt_task.ps1",
+        "-Toolchain",
+        "mingw",
+        "-Action",
+        "CompileTranslations"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$gcc"
+    }
+  ]
+}

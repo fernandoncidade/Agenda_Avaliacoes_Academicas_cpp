@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Qt 6.11.0 MSVC 2022 64-bit",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "environmentSetupScript": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Auxiliary/Build/vcvars64.bat",
+    "compilers": {
+      "C": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+      "CXX": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe"
+    },
+    "environmentVariables": {
+      "VSLANG": "1033",
+      "PATH": "C:/Qt/6.11.0/msvc2022_64/bin;C:/Qt/Tools/Ninja;${env:PATH}"
+    },
+    "cmakeSettings": {
+      "CMAKE_PREFIX_PATH": "C:/Qt/6.11.0/msvc2022_64",
+      "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/Ninja/ninja.exe",
+      "AGENDA_QT_BIN_DIR": "C:/Qt/6.11.0/msvc2022_64/bin",
+      "AGENDA_DEPLOY_DIR": "D:/MISCELANEAS/VSCode/AGENDA/AgendaAvaliacoesAcademicas_msvc"
+    }
+  },
+  {
+    "name": "Qt 6.11.0 MinGW 64-bit",
+    "preferredGenerator": {
+      "name": "Ninja"
+    },
+    "compilers": {
+      "C": "C:/Qt/Tools/mingw1310_64/bin/gcc.exe",
+      "CXX": "C:/Qt/Tools/mingw1310_64/bin/g++.exe"
+    },
+    "environmentVariables": {
+      "PATH": "C:/Qt/6.11.0/mingw_64/bin;C:/Qt/Tools/mingw1310_64/bin;C:/Qt/Tools/Ninja;${env:PATH}"
+    },
+    "cmakeSettings": {
+      "CMAKE_PREFIX_PATH": "C:/Qt/6.11.0/mingw_64",
+      "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/Ninja/ninja.exe",
+      "AGENDA_QT_BIN_DIR": "C:/Qt/6.11.0/mingw_64/bin",
+      "AGENDA_DEPLOY_DIR": "D:/MISCELANEAS/VSCode/AGENDA/AgendaAvaliacoesAcademicas_mingw"
+    }
+  }
+]

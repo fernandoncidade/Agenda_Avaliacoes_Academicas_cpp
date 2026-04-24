@@ -1,0 +1,57 @@
+AGENDA DE AVALIAÇÕES ACADÊMICAS
+Versão: 2026.4.24.0
+Autor: Fernando Nillsson Cidade
+
+Resumo:
+A Agenda de Avaliações Acadêmicas é um utilitário gráfico leve para Windows desenvolvido em C++20 com Qt 6. Seu objetivo principal é consolidar, organizar e apresentar as datas de atividades avaliativas (provas, testes, trabalhos, apresentações etc.) de todas as disciplinas matriculadas no semestre em um único local acessível e visual. A interface prioriza rapidez de consulta e clareza temporal, exibindo as atividades em ordem cronológica — da mais próxima à mais distante — e oferecendo ferramentas para exportação, filtragem e personalização visual.
+
+Funcionalidades principais:
+- Cadastro de atividades avaliativas com campos: curso, ementa, semestre, disciplina, turma, tipo de avaliação, sequência e data.
+- Visão cronológica consolidada de todas as atividades.
+- Destaque por cores para fácil identificação de disciplinas/padrões de atividade.
+- Suporte multilíngue: Português (pt_BR) e Inglês (en_US) com troca em tempo de execução.
+- Exportação para PDF das listas de atividades.
+- Edição individual e em lote de entradas; exclusão selecionada.
+- Filtros e ordenação automática por data.
+- Persistência de configurações do usuário (idioma, modo de cores, preferências).
+- Preparado para distribuição como executável Windows nativo, com dependências de execução implantadas junto ao binário.
+
+Arquitetura e integração:
+- GUI: Qt 6 (Core, Gui, Widgets, Sql e PrintSupport) com widgets personalizados para seleção dinâmica de cursos, ementas, semestres e disciplinas.
+- Módulos principais:
+  - Gerenciador_Atividades: lógica de criação, listagem, edição, exclusão e exportação das atividades.
+  - Banco_Dados: provê listas e mapeamentos de cursos, turmas e tipos de avaliação, permitindo tradução e configuração por idioma.
+- Persistência: armazenamento local em banco SQLite, arquivos JSON auxiliares e preferências no diretório persistente do usuário.
+- Exportação para PDF e rotinas relacionadas usam recursos nativos do Qt, como QPdfWriter e PrintSupport.
+
+Privacidade e armazenamento de dados:
+- Todos os dados do usuário (atividades e configurações) são mantidos localmente no diretório persistente.
+- Nenhuma informação é transmitida automaticamente para servidores externos pelo aplicativo.
+- Arquivos exportados são gravados na localização escolhida pelo usuário.
+
+Como usar (resumo rápido):
+1. Abra o aplicativo.
+2. Selecione curso, ementa e semestre para carregar disciplinas disponíveis.
+3. Preencha os campos de tipo, sequência, data, disciplina e turma; clique em "Registrar" para salvar.
+4. Utilize os botões para editar, excluir ou exportar as atividades para PDF.
+5. Altere o idioma ou modo de cores nas opções do menu conforme necessário.
+
+Distribuição e empacotamento:
+- O projeto utiliza CMake, Qt LinguistTools e windeployqt para gerar executáveis Windows com recursos, traduções e bibliotecas Qt necessárias.
+- Há distribuição separada para toolchains MSVC e MinGW, mantendo a mesma base funcional do aplicativo.
+- Quando distribuído como executável, o usuário final não precisa instalar ambiente de desenvolvimento C++/Qt nem bibliotecas adicionais de desenvolvimento.
+
+Licença:
+- Projeto licenciado sob GNU LGPL v3 (ver arquivo LICENSE).
+- Os destinatários podem usar, estudar, modificar e redistribuir o software nos termos dessa licença; componentes de terceiros mantêm suas licenças próprias.
+- Textos de licença, avisos e informações de copyright/marca acompanham o pacote de distribuição.
+
+Contatos e suporte:
+- Autor: Fernando Nillsson Cidade
+- Relatos de bugs, sugestões e contribuições: abrir issue ou pull request no repositório do projeto.
+
+Histórico e motivação:
+- Motivado pela necessidade prática de reduzir o tempo e a fricção ao consultar prazos avaliativos, o aplicativo nasceu para transformar um processo disperso (múltiplas agendas, planilhas e mensagens) em uma visão única, ordenada e automática do semestre. A distinção por cores, a tradução integrada e a exportação em PDF foram implementadas para tornar a ferramenta útil em diferentes contextos acadêmicos e promover melhor planejamento e redução de ansiedade dos usuários.
+
+Notas finais:
+- Para desenvolvedores interessados em estender o projeto, consulte README.md, CMakeLists.txt e o código-fonte para detalhes sobre a estrutura dos módulos, pontos de extensão, tradução e padrões de persistência.
