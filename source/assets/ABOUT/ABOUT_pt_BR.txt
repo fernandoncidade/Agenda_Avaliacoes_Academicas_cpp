@@ -1,0 +1,27 @@
+AGENDA DE AVALIAÇÕES ACADÊMICAS
+Versão: 2026.11.22.0
+Autor: Fernando Nillsson Cidade
+E-mail: linceu_lighthouse@outlook.com
+Repositório Oficial: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp
+
+Resumo:
+A AGENDA DE AVALIAÇÕES ACADÊMICAS é um aplicativo desktop leve e nativo para Windows desenvolvido em C++23 com Qt 6.12.0 e persistência local SQLite. Sua finalidade principal é consolidar, organizar e apresentar em ordem cronológica todas as datas de atividades avaliativas (provas, testes, trabalhos, seminários, apresentações etc.) das disciplinas matriculadas no semestre em um único painel claro e acessível.
+
+Principais funcionalidades:
+- Cadastro estruturado de avaliações com campos em cascata: Curso, Ementa, Semestre, Disciplina, Turma da Disciplina, Tipo de Atividade Avaliativa, Sequência da Atividade e Data.
+- Listas personalizadas persistentes em listas.db combinadas automaticamente às grades pré-cadastradas (com menu Configurações > Excluir Item para remoção granular por categoria).
+- Visão cronológica consolidada ordenada automaticamente por data (dd/MM/yyyy), com prevenção de HTML/script injection e edição individual ou em lote.
+- Destaque cromático automático por código/nome de disciplina ("Coloridas" vs. "Preto", salvo em config.json).
+- Exportação direta para PDF (Qt PrintSupport / QPdfWriter) mantendo a ordenação cronológica e o esquema de cores selecionado.
+- Interface bilíngue dinâmica em tempo de execução: Português (pt_BR) e English (en_US) via Qt Linguist (.ts / .qm) e language.json.
+- Arquitetura 100% Local-First e Offline (%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\): zero telemetria, zero contas externas e desinstalação limpa.
+- Compilação dual em MSVC x64 (14.52.37025 / Windows SDK 10.0.28000.0) e MinGW-w64 x64 (GCC 15.1.0), com distribuições externas ultra-limpas, instaladores Inno Setup com runtime app-local (sem vc_redist.x64.exe) e suíte modular CTest/QtTest.
+
+Duplo Licenciamento e Transparência:
+- Código-fonte público no GitHub licenciado sob GNU AGPLv3 (ver arquivo LICENSE).
+- Pacote oficial da Microsoft Store regido pelo EULA Oficial do Autor (source/assets/EULA/EULA_pt_BR.txt) e CLC (source/assets/CLC/CLC_pt_BR.txt).
+- Documentação institucional em source/assets/ com liberdade expressa para desenvolvedores e forks adaptarem conforme suas distribuições e legislações locais.
+- A Microsoft NÃO presta suporte ao cliente nem cobre este software sob a Política de Privacidade da Microsoft. Suporte voluntário best-effort exclusivamente pelo autor em linceu_lighthouse@outlook.com e GitHub Issues.
+
+Aviso de Uso Auxiliar ("AS IS"):
+Este aplicativo é uma ferramenta auxiliar de organização acadêmica fornecida "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), sem garantias. Conferir sempre os prazos e calendários oficiais junto às coordenações, docentes e portais da instituição de ensino.

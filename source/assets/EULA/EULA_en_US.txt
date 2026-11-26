@@ -1,0 +1,54 @@
+END USER LICENSE AGREEMENT (EULA) — ACADEMIC EVALUATION SCHEDULE
+Version 2026.11.22.0, November 22, 2026
+
+Copyright (c) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+
+DUAL-LICENSING AND MICROSOFT INDEPENDENCE NOTICE:
+1. This End User License Agreement (EULA) governs EXCLUSIVELY the precompiled, packaged, and digitally signed binary package officially published by the author on the Microsoft Store. These terms operate in harmony with the Microsoft Store Standard Application License Terms; to the extent any mandatory term of the Microsoft Store Standard Application License Terms or applicable consumer law conflicts with this EULA for Store acquisitions, those mandatory Store/statutory terms prevail.
+2. The complete source code of this project is publicly licensed on GitHub under the GNU Affero General Public License v3 (AGPLv3), granting full rights to inspect, compile, modify, fork, and distribute independent builds under AGPLv3. For institutional documentation inside source/assets/, the author additionally grants developers and forks full freedom to alter, replace, remove, or adapt those texts for their own distributions.
+3. Microsoft does NOT provide customer or technical support for this application and does NOT cover this Software under any Microsoft privacy policy.
+
+By installing or using the official Microsoft Store package of ACADEMIC EVALUATION SCHEDULE, you agree to this EULA in full. If you disagree, do not install or use the package, and cleanly remove it through Windows controls.
+
+TERMS AND CONDITIONS:
+
+1. DEFINITIONS
+   "Licensor": Fernando Nillsson Cidade, exclusive copyright holder of the original Software.
+   "Software": The ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) program compiled in C++23 / Qt 6.12.0 for Windows x64 (including GUI, SQLite storage modules, custom lists, PDF export, compliance assets, and translations).
+   "Licensee" or "you": Individual or entity that obtained the official package from the Microsoft Store or an authorized channel provided by the author.
+
+2. LICENSE GRANT AND CLEAN UNINSTALLATION
+   Licensor grants a personal, non-exclusive, non-transferable license to install and run the official Software package on compatible Windows devices as you see fit, as an auxiliary tool for academic organization, semester assessment scheduling, and study planning.
+   The User has the guaranteed right to cleanly uninstall and remove the Software at any time through Windows Settings or the Start Menu without leaving hidden background services, drivers, or resident processes running.
+
+3. RESTRICTIONS ON THE OFFICIAL PACKAGE
+   Licensee may not:
+   a) Commercially resell for a fee, rent, lease, or sublicense the author's official packaged and digitally signed Microsoft Store distribution without prior written authorization;
+   b) Remove, conceal, or alter copyright notices, third-party attributions, or official project marks in the official package;
+   c) Use the Software for unlawful purposes.
+
+4. INTELLECTUAL PROPERTY
+   The official package is licensed, not sold, and is protected under Brazilian Law No. 9.609/1998, Law No. 9.610/1998, and international copyright treaties. Third-party open-source components (including Qt 6.12.0 under GNU LGPLv3, SQLite in the Public Domain, Windows SDK libraries, and MSVC / MinGW-w64 runtimes) remain governed by their respective licenses in NOTICES/ and LICENSES/.
+
+5. AUXILIARY ACADEMIC SCOPE AND USER RESPONSIBILITY
+   a) Auxiliary organization tool: ACADEMIC EVALUATION SCHEDULE is designed to consolidate, chronologically sort, color-highlight, and export to PDF assessment dates entered by the user.
+   b) Mandatory institutional verification: Built-in syllabus and course catalogs are illustrative/auxiliary and may not reflect curriculum updates at every educational institution. Users must always verify official exam, assignment, and seminar dates directly with instructors and official academic portals, and maintain backups of local databases and exported PDF files.
+   c) Sole user responsibility: Any omissions, input errors, or schedule conflicts remain the user's responsibility if the application is relied upon without independent institutional confirmation.
+
+6. DATA SOVEREIGNTY AND LOCAL-FIRST PRIVACY
+   ACADEMIC EVALUATION SCHEDULE operates 100% offline and locally, with zero telemetry and zero cloud servers. Activities, custom lists, color modes, and language settings are saved solely on the user's workstation (%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\), while PDF exports are written only to paths chosen by the user, strictly governed by the Software's own Privacy Policy (PRIVACY_POLICY).
+
+7. UPDATES AND TECHNICAL SUPPORT
+   Updates may be published voluntarily via the Microsoft Store and the official repository. Microsoft provides NO customer support for this Software. Author support (individual developer) is voluntary on a best-effort basis via email (linceu_lighthouse@outlook.com) or through https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp.
+
+8. TERM AND TERMINATION
+   This EULA remains effective until terminated by Licensee through clean uninstallation or automatically upon breach of its terms.
+
+9. DISCLAIMER OF WARRANTIES ("AS IS")
+   To the maximum extent permitted by applicable law (and in harmony with GNU AGPLv3 Sections 15–16 and Brazilian Law No. 9.609/1998), the Software is provided "AS IS", "WITH ALL FAULTS", and "AS AVAILABLE", without express or implied warranties of curriculum accuracy, uninterrupted operation, or fitness for a particular purpose.
+
+10. LIMITATION OF LIABILITY
+    To the maximum extent not prohibited by mandatory law, Licensor shall not be liable for lost profits, missed academic deadlines, loss of unbacked data, or indirect, incidental, special, or consequential damages arising from the use or inability to use the Software.
+
+11. GOVERNING LAW
+    This Agreement is governed by the laws of the Federative Republic of Brazil and any non-waivable consumer protection laws of Licensee's jurisdiction.

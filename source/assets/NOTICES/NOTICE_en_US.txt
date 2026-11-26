@@ -1,0 +1,35 @@
+THIRD-PARTY NOTICES AND ATTRIBUTIONS — ACADEMIC EVALUATION SCHEDULE
+Version 2026.11.22.0, November 22, 2026
+
+ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) incorporates and utilizes third-party open-source components, libraries, and compiler runtime modules:
+
+1. ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS)
+   Copyright (C) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+   Dual-licensed under GNU Affero General Public License v3 (GNU AGPLv3) for the public GitHub source repository and Author's Official EULA + CLC for the official Microsoft Store package.
+   Supplied "AS IS", without express or implied warranties, in accordance with the Official EULA and GNU AGPLv3 Sections 15–16.
+   Full license texts are provided in source/assets/LICENSES/ and in the repository root LICENSE file.
+
+2. QT APPLICATION FRAMEWORK (CORE, GUI, WIDGETS, SQL, PRINTSUPPORT, LINGUISTTOOLS)
+   Version: 6.12.0
+   Copyright (C) The Qt Company Ltd. and contributors.
+   Licensed under the GNU Lesser General Public License version 3 (GNU LGPLv3).
+   In compliance with GNU LGPLv3, Qt libraries are dynamically linked in the Windows binary distribution, preserving the user's right to replace or relink compatible Qt framework DLL files.
+   License text: source/assets/LICENSES/GNU LESSER GENERAL PUBLIC LICENSE Version 3.txt
+   Full information: https://www.qt.io/licensing | https://www.gnu.org/licenses/lgpl-3.0.html.en
+
+3. SQLITE DATABASE ENGINE (VIA QT SQL DRIVER QSQLITE)
+   Copyright (C) D. Richard Hipp and contributors.
+   Dedicated to the Public Domain (SQLite Blessing — Public Domain).
+   Notice text: source/assets/LICENSES/SQLite Is Public Domain.txt
+   Official information: https://www.sqlite.org/copyright.html
+
+4. MICROSOFT WINDOWS SDK & VISUAL C++ RUNTIME (MSVC x64 BUILDS)
+   Copyright (C) Microsoft Corporation.
+   App-local Visual C++ Runtime libraries (msvcp140.dll, msvcp140_1.dll, msvcp140_2.dll, vcruntime140.dll, vcruntime140_1.dll — MSVC 14.52 / Windows SDK 10.0.28000.0) bundled locally in the application directory for MSVC builds, avoiding embedding vc_redist.x64.exe.
+
+5. MINGW-W64 & GCC RUNTIME LIBRARIES (MINGW x64 BUILDS)
+   GCC 15.1.0 (Tools/mingw1510_64) — libgcc_s_seh-1.dll, libstdc++-6.dll, and libwinpthread-1.dll.
+   Licensed under GPLv3 with GCC Runtime Library Exception 3.1 (and MIT/BSD terms for libwinpthread), accompanying solely MinGW-w64 builds.
+
+Contact / Support: Fernando Nillsson Cidade — linceu_lighthouse@outlook.com
+Official Repository: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp

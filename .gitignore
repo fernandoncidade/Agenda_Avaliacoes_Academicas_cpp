@@ -1,0 +1,13 @@
+/.vscode/
+/.vscode
+/builds/
+/builds
+/library/
+/library
+/cmake/
+/cmake
+
+/CMakePresets.json
+/rascunho.cpp
+
+/mocks/clear_builds.ps1

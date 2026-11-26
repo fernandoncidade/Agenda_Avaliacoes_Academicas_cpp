@@ -1,0 +1,43 @@
+POLÍTICA DE PRIVACIDADE — AGENDA DE AVALIAÇÕES ACADÊMICAS
+Última atualização: 22 de novembro de 2026
+Versão: 2026.11.22.0
+
+A sua privacidade e o controle exclusivo dos seus registros acadêmicos são princípios fundamentais da AGENDA DE AVALIAÇÕES ACADÊMICAS ("Software" ou "Aplicativo"). Esta Política de Privacidade explica de forma transparente como o aplicativo opera integralmente em seu dispositivo local.
+
+AVISO DE INDEPENDÊNCIA FRENTE À MICROSOFT:
+A Microsoft NÃO fornece uma política de privacidade padrão para a AGENDA DE AVALIAÇÕES ACADÊMICAS, e este Software NÃO é coberto pela Política de Privacidade da Microsoft (https://www.microsoft.com/pt-br/privacy/privacystatement). Os dados coletados separadamente pela própria loja Microsoft Store (como buscas, downloads, atualizações, desinstalações e avaliações associadas à sua conta Microsoft) ou diagnósticos do Windows são regidos exclusivamente pela Política de Privacidade da Microsoft. Todo o processamento ocorrido dentro da AGENDA DE AVALIAÇÕES ACADÊMICAS é regido exclusivamente por esta Política de Privacidade do desenvolvedor.
+
+1. Princípio Fundamental: Arquitetura 100% Local-First e Offline
+A AGENDA DE AVALIAÇÕES ACADÊMICAS foi projetada sob Privacidade por Padrão e Operação Local. Todos os cadastros de avaliações, listas personalizadas, preferências visuais, idioma, renderização da agenda e exportação de documentos PDF são executados 100% offline na máquina do usuário. Nenhuma informação é transmitida, enviada, sincronizada ou compartilhada com servidores remotos, serviços em nuvem ou terceiros.
+
+2. Informações Processadas Localmente pelo Software
+O Aplicativo processa exclusivamente os dados informados deliberadamente pelo usuário e preferências locais operacionais:
+- Dados de Atividades Avaliativas: Curso, ementa, semestre, disciplina, turma, tipo de avaliação, sequência e data da atividade, gravados localmente no banco de dados SQLite "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\atividades.db".
+- Listas Personalizadas em Cascata: Valores digitados livremente pelo usuário para cursos, ementas, semestres, disciplinas, turmas, tipos e sequências por idioma, gravados no banco SQLite "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\listas.db".
+- Preferências Locais: Modo de cores ("coloridas" ou "preto") em "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\config.json" e idioma ativo ("pt_BR" ou "en_US") em "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\language.json".
+- Logs Diagnósticos Locais: Registros técnicos locais gravados sob "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\logs\file_agenda_*.log" (rotação automática mantendo no máximo 10 arquivos recentes).
+- Documentos Exportados: Arquivos PDF gerados via QPdfWriter somente na pasta e nome selecionados explicitamente pelo usuário nos diálogos de salvamento do Windows.
+
+O Software NÃO solicita, NÃO coleta, NÃO rastreia e NÃO envia dados pessoais identificáveis para servidores externos, anúncios ou SDKs analíticos.
+
+3. Base Legal e Capacidade Declarada (LGPD / GDPR / Microsoft Store)
+O processamento estritamente local atende à execução das funcionalidades de organização acadêmica solicitadas pelo usuário (art. 7º, V e IX, da LGPD — Lei nº 13.709/2018; execução e interesse legítimo sob o GDPR).
+Em distribuições empacotadas para a Microsoft Store (MSIX), declara-se apenas a capacidade restrita necessária para execução Win32 nativa C++23 / Qt 6.12.0 e diálogos padrão de arquivo do Windows, sem acesso a câmera, microfone, localização precisa ou contatos.
+
+4. Armazenamento Local, Zero Rede e Ausência de Compartilhamento
+- Zero Telemetria: O executável padrão não contém contas de usuário, rastreadores, anúncios nem conexões de rede automáticas em segundo plano.
+- Compartilhamento Explícito: Qualquer envio de arquivo PDF exportado a colegas ou instituições ocorre apenas por ação direta e voluntária do usuário fora do Aplicativo.
+- Bibliotecas Qt 6 e SQLite: Os módulos dinâmicos do Qt 6.12.0 (Core, Gui, Widgets, Sql/QSQLITE e PrintSupport) acompanham a distribuição apenas para execução local da interface gráfica, persistência SQLite e impressão em PDF.
+
+5. Controle do Usuário e Desinstalação Limpa
+O usuário possui controle integral sobre todos os dados armazenados, podendo:
+- Editar, filtrar ou excluir atividades individuais e listas personalizadas diretamente na interface gráfica;
+- Exportar relatórios PDF ou fazer backup direto da pasta "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\";
+- Desinstalar o Aplicativo de forma limpa a qualquer momento pelas Configurações do Windows -> Aplicativos -> Aplicativos instalados (ou Menu Iniciar -> Desinstalar), sem deixar processos ocultos ou serviços em segundo plano.
+
+6. Licenciamento e Contato para Privacidade (Desenvolvedor Individual)
+Fernando Nillsson Cidade
+E-mail: linceu_lighthouse@outlook.com
+Repositório Oficial: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp
+Licenciamento: GNU AGPLv3 (código-fonte em LICENSE) / EULA Oficial do Autor (pacote Microsoft Store).
+Aviso: A Microsoft não oferece suporte ao cliente nem cobertura de privacidade para este aplicativo.

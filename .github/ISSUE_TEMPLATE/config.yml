@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp/discussions
+    about: Tire dúvidas gerais, compartilhe sugestões de grades curriculares ou discuta melhorias aqui. / Ask general questions or suggest curriculum catalogs here.
+  - name: Security Vulnerability Reporting
+    url: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp/security/advisories/new
+    about: Relate vulnerabilidades de segurança de forma privada. / Please report security vulnerabilities privately.

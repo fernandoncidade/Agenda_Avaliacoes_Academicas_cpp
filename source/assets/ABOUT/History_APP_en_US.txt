@@ -1,0 +1,11 @@
+History, Justification, and Development Motivation — ACADEMIC EVALUATION SCHEDULE
+
+It began with a simple, practical need: tired of opening multiple planners, spreadsheets, and messages just to find out when each exam or assignment was due, the idea emerged to gather every important date of the semester into one organized, easily accessible window. The earliest prototype saved time immediately, yet it soon became obvious that structured cascading selection and automatic chronological sorting would make the workflow dramatically faster.
+
+The purpose of ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) has always been to save time and lower stress for students and instructors when tracking assessment deadlines. By consolidating activities from every enrolled subject into a unified view with one-click PDF export, users gain instant chronological clarity from the nearest deadline to the farthest.
+
+To enable rapid visual scanning even across packed semesters, automatic color coding by subject code (`[A-Z]{1,3}\d{3,4}`) or full subject name was built in, alongside a live monochrome toggle. Runtime bilingual switching (`pt_BR` / `en_US`) extends usability across both Portuguese-speaking and international academic environments.
+
+Across its evolution from the early Python/PySide6 version to native C++ with Qt 6 and CMake, the codebase has been consolidated to modern C++23 and Qt 6.12.0 with dual MSVC x64 (14.52 / Windows SDK 10.0.28000.0) and MinGW-w64 x64 (GCC 15.1.0) toolchain pipelines, dual local SQLite stores (`atividades.db` and `listas.db`), persistent cascading custom lists with per-category deletion, ultra-clean external deployments, app-local Inno Setup installers (omitting vc_redist.x64.exe), transparent dual licensing (GNU AGPLv3 for open-source repository code and Author's Official EULA for Microsoft Store binaries), and a full modular CTest/QtTest engineering test suite.
+
+Its founding motivation remains unchanged: turning scattered semester deadlines into a clear, dependable timeline that restores focus and peace of mind to academic planning.

@@ -1,0 +1,39 @@
+TERMOS DE SERVIÇOS COMERCIAIS, SUPORTE E DISTRIBUIÇÃO OFICIAL — AGENDA DE AVALIAÇÕES ACADÊMICAS
+Versão: 2026.11.22.0
+Data: 22 de novembro de 2026
+
+Autor e Desenvolvedor: Fernando Nillsson Cidade (Desenvolvedor Individual / Pessoa Física)
+E-mail de Suporte e Contato: linceu_lighthouse@outlook.com
+Site Oficial / Repositório: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp
+
+--------------------------------------------------------------------------------
+
+1. CÓDIGO-FONTE ABERTO E TRANSPARÊNCIA (DUPLO LICENCIAMENTO):
+O código-fonte integral deste projeto é disponibilizado publicamente no GitHub sob a Licença GNU Affero General Public License v3 (GNU AGPLv3, arquivo LICENSE). Qualquer pessoa ou entidade possui total liberdade para inspecionar, auditar, compilar, modificar e criar trabalhos derivados a partir do código-fonte nos termos e condições da GNU AGPLv3.
+Para a documentação institucional de conformidade em source/assets/ (ABOUT, CLC, COPYRIGHT, EULA, LICENSES, NOTICES, PRIVACY_POLICY e RELEASE), o autor concede ainda plena liberdade aos desenvolvedores e forks para alterar, excluir, adicionar e adaptar tais textos em suas próprias compilações e plataformas.
+
+2. EDIÇÃO OFICIAL DA MICROSOFT STORE E DESINSTALAÇÃO LIMPA:
+O autor pode disponibilizar oficialmente a AGENDA DE AVALIAÇÕES ACADÊMICAS como aplicativo na Microsoft Store sob o respectivo EULA Oficial do Autor (source/assets/EULA/EULA_pt_BR.txt) e em instaladores Windows assinados.
+O pacote permite desinstalação limpa a qualquer momento pelas Configurações do Windows ou Menu Iniciar, sem deixar processos ocultos ou serviços em segundo plano.
+
+3. POLÍTICA DE SUPORTE TÉCNICO E INDEPENDÊNCIA DA MICROSOFT:
+O desenvolvimento e a manutenção deste projeto são realizados pelo autor como iniciativa pessoal e educacional em C++23, Qt 6.12.0 e persistência local SQLite. Por essa razão:
+a) A Microsoft NÃO presta suporte técnico nem atendimento ao cliente pela AGENDA DE AVALIAÇÕES ACADÊMICAS, e a Política de Privacidade da Microsoft não cobre este aplicativo (aplica-se exclusivamente a Política de Privacidade própria disponível em PRIVACY_POLICY);
+b) Todo eventual suporte técnico voluntário do autor (desenvolvedor individual) ocorre exclusivamente por correio eletrônico (linceu_lighthouse@outlook.com) e publicamente pelas abas Issues e Discussions do repositório oficial no GitHub;
+c) O atendimento ocorre sob o regime voluntário de melhores esforços (best-effort), conforme a disponibilidade do autor, sem suporte telefônico, garantia de resposta, SLA comercial ou acesso remoto 24/7.
+
+4. ESCOPO ACADÊMICO AUXILIAR E ISENÇÃO DE RESPONSABILIDADE ("AS IS"):
+A AGENDA DE AVALIAÇÕES ACADÊMICAS destina-se a consolidar, ordenar cronologicamente, destacar por cores e exportar para PDF avaliações acadêmicas cadastradas pelo usuário, atuando como ferramenta auxiliar de organização de estudos:
+a) Os catálogos pré-cadastrados de cursos, ementas, semestres e disciplinas têm caráter ilustrativo/auxiliar e podem não refletir alterações curriculares oficiais de cada instituição de ensino;
+b) O usuário deve sempre conferir prazos oficiais junto aos professores e sistemas acadêmicos institucionais e manter backups periódicos dos bancos SQLite locais e relatórios PDF exportados;
+c) O Software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), com todas as suas falhas e sem garantias (EULA Oficial, Lei nº 9.609/1998 e GNU AGPLv3 Seções 15 e 16).
+
+5. SERVIÇOS OPCIONAIS PARA INSTITUIÇÕES E LICENCIAMENTO SOB MEDIDA:
+Não é exigida licença comercial separada para uso ordinário, estudo, modificação ou redistribuição sob GNU AGPLv3.
+Para instituições de ensino ou organizações que necessitem de:
+- Suporte institucional dedicado, implantação em laboratórios acadêmicos ou personalização de catálogos curriculares específicos;
+- Licenciamento comercial alternativo fora das obrigações copyleft da GNU AGPLv3 para redistribuições proprietárias fechadas (quando aplicável);
+- Autorização expressa de marca/nome para distribuições oficiais institucionais;
+
+Entre em contato diretamente pelo e-mail:
+linceu_lighthouse@outlook.com

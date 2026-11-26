@@ -1,0 +1,11 @@
+História, Justificativa e Motivação do Desenvolvimento — AGENDA DE AVALIAÇÕES ACADÊMICAS
+
+No início, a necessidade foi simples e prática: cansado de abrir várias agendas, planilhas e mensagens para descobrir quando cada prova ou trabalho aconteceria, surgiu a ideia de reunir todas as datas importantes do semestre em um único lugar acessível e organizado. O primeiro protótipo nasceu como uma lista manual que já poupava tempo — porém logo ficou claro que uma interface estruturada em cascata com ordenação automática tornaria essa tarefa exponencialmente mais eficiente.
+
+O propósito da AGENDA DE AVALIAÇÕES ACADÊMICAS sempre foi economizar tempo e reduzir o estresse de estudantes e professores ao consultar datas avaliativas. Consolidando atividades de todas as disciplinas matriculadas no semestre em um painel visual e exportável em PDF, o usuário obtém uma visão cronológica imediata — da avaliação mais próxima à mais distante —, permitindo planejamento e priorização em poucos cliques.
+
+Para acelerar o reconhecimento visual mesmo em listas extensas, foi implementado o sistema cromático automático por código de disciplina (`[A-Z]{1,3}\d{3,4}`) ou nome completo, com alternância rápida entre modo colorido e modo monocromático. O suporte bilíngue em tempo de execução (`pt_BR` / `en_US`) amplia o uso em ambientes acadêmicos nacionais e internacionais.
+
+Com a evolução do projeto da base inicial em Python/PySide6 para C++ nativo com Qt 6 e CMake, toda a aplicação foi consolidada para o padrão C++23 com Qt 6.12.0, suporte dual a MSVC x64 (14.52 / Windows SDK 10.0.28000.0) e MinGW-w64 x64 (GCC 15.1.0), bancos SQLite locais independentes (`atividades.db` e `listas.db`), listas personalizadas editáveis e removíveis por categoria, distribuições externas ultra-limpas, instaladores Inno Setup com runtime app-local (sem embutir vc_redist.x64.exe), arquitetura transparente de duplo licenciamento (GNU AGPLv3 para o repositório aberto e EULA Oficial para o pacote da Microsoft Store) e suíte profissional completa de testes automatizados (`Qt6::Test` / `CTest`).
+
+A motivação criativa permanece fiel desde a origem: transformar a dispersão de prazos do semestre em um mapa cronológico claro e confiável — devolvendo tempo, clareza e tranquilidade à rotina de estudos.

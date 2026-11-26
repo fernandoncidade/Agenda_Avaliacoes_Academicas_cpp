@@ -1,0 +1,24 @@
+MANUAL DO USUÁRIO — AGENDA DE AVALIAÇÕES ACADÊMICAS
+Versão: 2026.11.22.0
+
+1. VISÃO GERAL
+A AGENDA DE AVALIAÇÕES ACADÊMICAS organiza avaliações semestrais em ordem cronológica com destaque por cor, persistência local SQLite, listas personalizadas por idioma e exportação PDF.
+
+2. CADASTRO DE AVALIAÇÕES E LISTAS EM CASCATA
+- Curso, Ementa, Semestre, Disciplina, Turma da Disciplina, Tipo de Atividade Avaliativa e Sequência da Atividade aceitam seleção nas listas pré-cadastradas OU digitação livre.
+- Ao clicar em "Registrar Definições", novos valores digitados são gravados automaticamente em listas.db (vinculados ao idioma ativo pt_BR ou en_US) e a atividade é salva em atividades.db com a data selecionada no calendário (dd/MM/yyyy).
+
+3. EDIÇÃO, EXCLUSÃO E MANUTENÇÃO DO HISTÓRICO
+- "Editar Item(ns)": selecione uma ou mais avaliações e edite data, tipo, sequência, disciplina e turma.
+- "Excluir Item(ns)": marque as avaliações desejadas e confirme para removê-las de atividades.db.
+- "Limpar Última Entrada": remove o último registro inserido pelo ID mais recente.
+- "Limpar Tudo": limpa todas as atividades da agenda e o painel de visualização.
+- Configurações > Excluir Item: permite excluir individualmente itens personalizados salvos em listas.db por categoria.
+
+4. CORES, IDIOMAS E EXPORTAÇÃO PDF
+- Configurações > Cores: alterna entre "Coloridas" (cor por código/disciplina) e "Preto" (monocromático), persistido em config.json.
+- Configurações > Idiomas: alterna ao vivo entre Português (Brasil) e English (United States), persistido em language.json.
+- "Exportar para PDF": gera documento PDF formatado (Qt PrintSupport / QPdfWriter) em ordem cronológica.
+
+5. ARMAZENAMENTO LOCAL E DESINSTALAÇÃO LIMPA
+Todos os dados permanecem localmente em %LOCALAPPDATA%\AgendaAvaliacoesAcademicas\ (atividades.db, listas.db, config.json, language.json e logs/file_agenda_*.log). Nenhuma informação sai do dispositivo. A desinstalação ocorre de forma limpa pelas Configurações do Windows ou Menu Iniciar.

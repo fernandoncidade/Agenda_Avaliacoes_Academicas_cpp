@@ -1,0 +1,54 @@
+LICENÇA DE USO DE USUÁRIO FINAL (EULA) — AGENDA DE AVALIAÇÕES ACADÊMICAS
+Versão 2026.11.22.0, 22 de novembro de 2026
+
+Copyright (c) 2025-2026 Fernando Nillsson Cidade. Todos os direitos reservados.
+
+AVISO DE DUPLO LICENCIAMENTO E INDEPENDÊNCIA DA MICROSOFT:
+1. Os termos deste Contrato de Licença de Usuário Final (EULA) aplicam-se EXCLUSIVAMENTE ao pacote binário pré-compilado, empacotado e assinado digitalmente distribuído oficialmente pelo autor na Microsoft Store. Estes termos complementam e observam os Termos de Licença Padrão para Aplicativos da Microsoft Store; em caso de conflito quanto ao uso de aplicativos obtidos pela Loja, prevalecem os direitos mínimos garantidos pelas regras da Microsoft Store e pela legislação consumerista aplicável.
+2. O código-fonte completo deste projeto é público no GitHub sob a Licença GNU Affero General Public License v3 (AGPLv3), garantindo total liberdade para estudo, compilação, modificação, criação de forks e redistribuição independente nos termos da AGPLv3. Para documentação institucional contida em source/assets/, o autor concede ainda plena liberdade aos desenvolvedores e forks para alterá-la ou adaptá-la às suas distribuições próprias.
+3. A Microsoft NÃO presta suporte técnico ao cliente por este aplicativo e NÃO cobre o Software sob nenhuma política de privacidade da Microsoft.
+
+Ao instalar ou utilizar o pacote oficial da Microsoft Store da AGENDA DE AVALIAÇÕES ACADÊMICAS, você concorda integralmente com este EULA. Caso discorde, não utilize nem instale o pacote e faça sua remoção limpa pelos controles do Windows.
+
+TERMOS E CONDIÇÕES:
+
+1. DEFINIÇÕES
+   "Licenciador": Fernando Nillsson Cidade, detentor exclusivo dos direitos autorais do Software original.
+   "Software": O programa AGENDA DE AVALIAÇÕES ACADÊMICAS compilado em C++23 / Qt 6.12.0 para Windows x64 (incluindo interface gráfica, módulos SQLite, listas personalizadas, exportação PDF, assets de conformidade e traduções).
+   "Licenciado" ou "você": Pessoa física ou jurídica que obteve o pacote oficial na Microsoft Store ou canal autorizado pelo autor.
+
+2. CONCESSÃO DE LICENÇA E DESINSTALAÇÃO LIMPA
+   O Licenciador concede licença pessoal, não exclusiva e intransferível para instalar e executar o pacote oficial do Software em dispositivos Windows compatíveis conforme lhe convir, como ferramenta auxiliar de organização acadêmica, planejamento semestral de avaliações e estudo.
+   O Usuário tem o direito garantido de desinstalar e remover o Software de maneira limpa a qualquer momento pelas Configurações do Windows ou Menu Iniciar, sem deixar serviços ocultos, drivers ou processos residentes em segundo plano.
+
+3. RESTRIÇÕES SOBRE O PACOTE OFICIAL
+   O Licenciado não poderá:
+   a) Revender comercialmente de forma paga, alugar, arrendar ou sublicenciar o pacote oficial empacotado e assinado pelo autor sem autorização escrita prévia;
+   b) Remover ou adulterar avisos de copyright, atribuições de terceiros ou marcas oficiais deste projeto no pacote oficial;
+   c) Utilizar o Software para finalidades ilícitas.
+
+4. PROPRIEDADE INTELECTUAL
+   O pacote oficial é licenciado, não vendido, protegido pela Lei nº 9.609/1998, pela Lei nº 9.610/1998 e por tratados internacionais. Componentes de terceiros (incluindo Qt 6.12.0 sob GNU LGPLv3, SQLite em Domínio Público, Windows SDK e bibliotecas de runtime MSVC / MinGW-w64) mantêm suas respectivas licenças em NOTICES/ e LICENSES/.
+
+5. ESCOPO ACADÊMICO AUXILIAR E RESPONSABILIDADE DO USUÁRIO
+   a) Ferramenta de organização auxiliar: A AGENDA DE AVALIAÇÕES ACADÊMICAS destina-se a consolidar, ordenar cronologicamente, destacar por cores e exportar para PDF datas de avaliações informadas pelo usuário.
+   b) Conferência institucional obrigatória: As ementas e disciplinas pré-cadastradas têm caráter ilustrativo/auxiliar e podem não refletir atualizações curriculares de cada instituição de ensino. O usuário deve sempre conferir prazos oficiais de provas, trabalhos e seminários diretamente junto aos docentes e sistemas acadêmicos oficiais da sua instituição, bem como manter cópias de segurança dos seus bancos locais e PDFs exportados.
+   c) Responsabilidade exclusiva pelas decisões do usuário: Eventuais omissões, falhas humanas ou inconsistências de digitação, horário ou calendário permanecem sob responsabilidade do usuário caso utilize o aplicativo sem conferência institucional independente.
+
+6. PRIVACIDADE E SOBERANIA LOCAL DOS DADOS
+   A AGENDA DE AVALIAÇÕES ACADÊMICAS opera 100% offline e localmente, sem telemetria e sem servidor em nuvem. Atividades, listas personalizadas, modo de cores e idioma são gravados exclusivamente na estação do usuário (%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\), enquanto exportações PDF são gravadas somente no caminho escolhido pelo usuário, em estrita observância à Política de Privacidade própria do Software (PRIVACY_POLICY).
+
+7. ATUALIZAÇÕES E SUPORTE TÉCNICO
+   Atualizações podem ser publicadas voluntariamente via Microsoft Store e no repositório oficial. A Microsoft não fornece suporte ao cliente para este Software. O suporte do autor (pessoa física) é voluntário e em regime de melhores esforços (best-effort) pelo e-mail linceu_lighthouse@outlook.com ou pelo repositório https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp.
+
+8. VIGÊNCIA E RESCISÃO
+   Esta licença vigora até rescisão pelo usuário (mediante desinstalação) ou automática por violação de suas cláusulas.
+
+9. ISENÇÃO DE GARANTIAS ("AS IS")
+   Na extensão máxima permitida em lei (e em harmonia com as Seções 15 e 16 da GNU AGPLv3 e a Lei nº 9.609/1998), o Software é fornecido "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), "COM TODAS AS SUAS FALHAS", sem garantias explícitas ou implícitas de exatidão curricular, operação ininterrupta ou adequação a uma finalidade específica.
+
+10. LIMITAÇÃO DE RESPONSABILIDADE
+    Na extensão máxima permitida pela legislação imperativa, o Licenciador não responde por lucros cessantes, perda de prazos acadêmicos, perda de dados não salvaguardados em backup, danos indiretos, incidentais ou consequenciais decorrentes do uso ou da impossibilidade de uso do Software.
+
+11. LEGISLAÇÃO APLICÁVEL
+    Este contrato observa as leis da República Federativa do Brasil e normas imperativas de proteção ao consumidor vigentes na jurisdição do usuário.

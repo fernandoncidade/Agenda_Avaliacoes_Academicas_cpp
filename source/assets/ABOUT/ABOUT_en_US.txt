@@ -1,0 +1,27 @@
+ACADEMIC EVALUATION SCHEDULE
+Version: 2026.11.22.0
+Author: Fernando Nillsson Cidade
+Email: linceu_lighthouse@outlook.com
+Official Repository: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp
+
+Summary:
+ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) is a lightweight native Windows desktop utility engineered in C++23 with Qt 6.12.0 and local SQLite persistence. Its primary purpose is to consolidate, organize, and display the dates of assessment activities (exams, quizzes, assignments, seminars, presentations, etc.) for all courses enrolled during the semester in a single clear and accessible panel.
+
+Main features:
+- Structured assessment registration with cascading fields: Course, Syllabus, Semester, Subject, Class, Type of Assessment Activity, Activity Sequence, and Date.
+- Persistent custom lists in listas.db automatically merged with built-in curricula (with Settings > Delete Item submenus for granular category removal).
+- Consolidated chronological view sorted automatically by date (dd/MM/yyyy), with HTML escaping and individual or batch editing/deletion.
+- Automatic subject color coding by course code/name ("Colorful" vs. "Black", saved in config.json).
+- Direct PDF export (Qt PrintSupport / QPdfWriter) preserving chronological order and the selected color mode.
+- Runtime bilingual interface switching between Português (pt_BR) and English (en_US) via Qt Linguist (.ts / .qm) and language.json.
+- 100% Local-First and Offline architecture (%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\): zero telemetry, zero external accounts, and clean uninstallation.
+- Dual toolchain support across MSVC x64 (14.52.37025 / Windows SDK 10.0.28000.0) and MinGW-w64 x64 (GCC 15.1.0), ultra-clean external runtime distributions, app-local Inno Setup installers (without vc_redist.x64.exe), and modular CTest/QtTest verification suite.
+
+Dual Licensing & Transparency:
+- Public source code on GitHub licensed under GNU AGPLv3 (see LICENSE).
+- Official Microsoft Store binary package governed by the Author's Official EULA (source/assets/EULA/EULA_en_US.txt) and CLC (source/assets/CLC/CLC_en_US.txt).
+- Institutional compliance documentation in source/assets/ carries explicit author permission for developers and forks to adapt or modify as needed for their own distributions and jurisdictions.
+- Microsoft does NOT provide customer support and does NOT cover this software under Microsoft's Privacy Statement. Voluntary best-effort support is provided exclusively by the author via linceu_lighthouse@outlook.com and GitHub Issues.
+
+Auxiliary Use Notice ("AS IS"):
+This application is an auxiliary academic planning tool supplied "AS IS" without warranties. Always confirm official assessment dates and deadlines directly with instructors and institutional academic systems.

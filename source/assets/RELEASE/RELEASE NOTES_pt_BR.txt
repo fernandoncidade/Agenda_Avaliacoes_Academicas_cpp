@@ -1,0 +1,76 @@
+NOTAS DE LANÇAMENTO: Versão 2026.11.22.0
+22 de novembro de 2026
+
+Resumo Geral
+Esta atualização traz melhorias importantes na organização interna do projeto, na preparação das versões instaláveis, na atualização automática de toda a documentação do aplicativo e nas verificações de qualidade, garantindo maior confiabilidade e consistência entre o programa, seus manuais e seus instaladores.
+
+Novidades, Ajustes e Melhorias
+1. Organização Mais Limpa de Recursos e Instaladores
+- Os arquivos de apoio, ícones incorporados ao aplicativo e recursos usados na preparação dos instaladores para Windows foram reorganizados de forma mais estruturada, facilitando a manutenção contínua e evitando divergências na geração de novos pacotes.
+
+2. Fluxo de Preparação e Ferramentas de Apoio Simplificados
+- O processo de preparação, limpeza de arquivos temporários e execução das ferramentas auxiliares foi simplificado e centralizado em um fluxo mais direto e padronizado.
+- As ferramentas de manutenção de versões e de traduções foram unificadas em uma rotina mais prática, reduzindo opções repetitivas no ambiente de trabalho e mantendo visíveis apenas as ações essenciais.
+
+3. Atualização Automática Mais Abrangente de Versões e Datas
+- A ferramenta interna responsável por atualizar versões e datas foi ampliada para manter todos os documentos do aplicativo sincronizados automaticamente em português e em inglês, incluindo manuais, guias, políticas, avisos, notas de lançamento e instaladores.
+- A sincronização também passou a atualizar automaticamente o documento de notas da versão vigente, evitando datas ou números de versão desatualizados entre os diferentes textos consultados pelo usuário.
+
+4. Verificações Ampliadas de Qualidade e Consistência Documental
+- As verificações automáticas foram expandidas para conferir integralmente a atualização dos documentos, a coerência das ferramentas auxiliares e a integridade geral dos pacotes gerados antes de cada distribuição.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão 2026.7.20.0
+20 de julho de 2026
+
+Resumo Geral
+Esta atualização consolida a modernização integral da base tecnológica do projeto para C++23 e Qt 6.12.0, com cadeias de compilação MSVC x64 (14.52.37025 / Windows SDK 10.0.28000.0) e MinGW-w64 x64 (GCC 15.1.0), distribuições externas ultra-limpas com runtime app-local nos instaladores Inno Setup (eliminando o embutimento redundante de vc_redist.x64.exe), arquitetura transparente de Duplo Licenciamento (GNU AGPLv3 para o repositório aberto e EULA Oficial + CLC para o pacote da Microsoft Store), documentação técnica completa e suíte modular profissional de testes automatizados CTest/QtTest em tests/.
+
+Novidades, Ajustes e Melhorias
+1. Migração para C++23 e Qt 6.12.0 (Dual Toolchain MSVC + MinGW)
+- Padrão de linguagem elevado para C++23 em CMakeLists.txt, CMakePresets.json, mocks/CMakeLists.txt e configurações do VS Code.
+- Atualização integral para Qt 6.12.0 (Core, Gui, Widgets, Sql, PrintSupport, LinguistTools e Test) com resolução multi-configuração de ferramentas (IMPORTED_LOCATION_RELEASE / RELWITHDEBINFO / DEBUG) para qmake, lrelease e windeployqt.
+- Presets CMake isolados para aplicativo (qt-msvc -> builds/build_AGENDA_msvc, qt-mingw -> builds/build_AGENDA_mingw) e para a suíte de testes (suite-msvc -> builds/build_suite_msvc, suite-mingw -> builds/build_suite_mingw), garantindo isolamento estrito de PATH entre MSVC 14.52 e MinGW 15.1.0 (GCC 15.1.0 antes de DLLs antigas).
+
+2. Distribuição Externa Ultra-Limpa e Instaladores Inno Setup Enxutos
+- Alvo DeployAgenda configurado com filtragem estrita de windeployqt (--skip-plugin-types e --exclude-plugins) e seleção cirúrgica de assets/traduções essenciais em runtime.
+- Distribuição MSVC empacotada com as 5 DLLs app-local do Visual C++ Runtime (msvcp140.dll, msvcp140_1.dll, msvcp140_2.dll, vcruntime140.dll, vcruntime140_1.dll) e distribuição MinGW com as 3 DLLs do GCC 15.1.0 (libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll).
+- Remoção do embutimento de vc_redist.x64.exe (~18 MB) nos scripts repo/Agenda_Avaliacoes_Academicas*.iss com guardas de pré-processador, reduzindo drasticamente o instalador MSVC para ficar menor até que o instalador MinGW.
+
+3. Duplo Licenciamento, Privacidade e Documentação Completa (docs/ e source/assets/)
+- Adoção da licença GNU AGPLv3 (SPDX: AGPL-3.0-only) no arquivo LICENSE para o código-fonte público, mantendo liberdade expressa para desenvolvedores adaptarem source/assets/, somada ao EULA Oficial do Autor e CLC para pacotes oficiais na Microsoft Store.
+- Documentação bilíngue (pt-BR / en-US) completa na raiz (README.md, MANUAL.md, OBSERVACAO.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md), em docs/ (architecture.md, compliance.md, licensing.md, privacy-policy.md, release-v2026.7.20.0.md, security-model.md, suggested-issues.md, technical-audit-and-roadmap.md, user-guide.md), templates em .github/ e documentos de conformidade atualizados em source/assets/ (com textos completos das licenças em source/assets/LICENSES/).
+
+4. Suíte Modular Profissional de Testes Automatizados (tests/)
+- Extração da biblioteca estática AgendaCore no CMake para compartilhamento entre o aplicativo principal e os binários de teste sem alterar o código-fonte do produto.
+- Implementação de 9 suítes CTest/QtTest isoladas em tests/ cobrindo frameworks/plugins Qt 6.12.0, utilitários/concorrência/rotação de logs/TrialManager, dicionários e mapeamentos curriculares/cromáticos, SQLite listas.db, integração Banco_Dados, CRUD completo e escala em atividades.db, traduções .qm e auditoria documental/licenciamento, fluxos end-to-end de GUI/diálogos modais/PDF e validação das ferramentas VersionEditor e lrelease.
+- Integração direta no VS Code (.vscode/tasks.json) com as tarefas "Qt6: Compilar e Executar SUITE (MSVC)" e "Qt6: Compilar e Executar SUITE (MinGW)" sem geração de distribuição externa para testes.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão: 2026.4.24.0
+24 de abril de 2026
+
+Resumo:
+Esta versão consolida a refatoração final do Agenda de Avaliações Acadêmicas, tendo como origem o projeto Python original (../Python/Agenda_Avaliacoes_Academicas). A aplicação foi reorganizada como um projeto C++/Qt 6, CMake, Ninja, suporte a MSVC e MinGW, tarefas dedicadas no VS Code, distribuição externa automatizada e ferramentas auxiliares próprias para manutenção de versões e traduções.
+
+Principais entregas:
+- Código-fonte organizado modularmente sob source/ (BancoDeDados, GerenciamentoAtividades, GerenciamentoInterfaceGrafica, language, utils).
+- Suporte bilíngue (pt_BR / en_US), geração de PDF via Qt PrintSupport / QPdfWriter e banco local SQLite (atividades.db e listas.db).
+- Ferramentas auxiliares em mocks/ (VersionEditor e CompileTranslations) em projeto separado mocks/CMakeLists.txt.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão: 2026.4.23.0
+23 de abril de 2026
+
+Resumo:
+Implementação da disciplina "Engenharia Social" (TH045) em Engenharia Civil, campos em cascata com entrada livre persistida em listas.db e menu Configurações > Excluir Item com submenus por categoria e confirmação traduzida Sim/Não / Yes/No.
+
+_________________________________________________
+
+NOTAS DE LANÇAMENTO: Versão: 0.0.1.0
+09 de Outubro de 2025
+
+Primeira versão pública — AGENDA DE AVALIAÇÕES ACADÊMICAS (protótipo original em Python/PySide6 com visão cronológica, destaque cromático e exportação PDF).

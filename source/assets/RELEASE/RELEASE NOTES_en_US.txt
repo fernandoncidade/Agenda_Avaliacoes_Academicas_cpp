@@ -1,0 +1,76 @@
+RELEASE NOTES: Version 2026.11.22.0
+November 22, 2026
+
+General Summary
+This update brings important improvements to the project's internal organization, installer preparation, automatic updating of all application documentation, and quality checks, ensuring greater reliability and consistency across the program, its manuals, and its installers.
+
+New Features, Adjustments, and Improvements
+1. Cleaner Organization of Resources and Installers
+- Support materials, icons embedded in the application, and resources used to prepare the Windows installers were reorganized in a clearer, more structured layout, making ongoing maintenance easier and preventing inconsistencies when producing new packages.
+
+2. Simplified Preparation Workflow and Support Tools
+- The workflow for preparing releases, cleaning temporary files, and running support tools was simplified and centralized into a more direct and consistent process.
+- The version-maintenance and translation support tools were unified into a more practical routine, reducing repetitive options in the workspace and keeping only the essential actions visible.
+
+3. Broader Automatic Updates for Versions and Dates
+- The internal tool responsible for updating version numbers and dates was expanded to automatically keep all application documents synchronized in both Portuguese and English, including manuals, guides, policies, notices, release notes, and installers.
+- Synchronization now also automatically updates the current release notes document, preventing outdated dates or version numbers across the different texts available to users.
+
+4. Expanded Quality Checks and Documentation Consistency
+- Automated checks were expanded to thoroughly verify document updates, consistency across support tools, and overall package integrity before each release.
+
+_________________________________________________
+
+RELEASE NOTES: Version 2026.7.20.0
+July 20, 2026
+
+General Summary
+This release consolidates the full technology baseline upgrade to C++23 and Qt 6.12.0, paired with dual MSVC x64 (14.52.37025 / Windows SDK 10.0.28000.0) and MinGW-w64 x64 (GCC 15.1.0) toolchains, ultra-clean external runtime distributions with app-local CRT deployment in Inno Setup installers (eliminating the redundant vc_redist.x64.exe payload), a transparent Dual-Licensing framework (GNU AGPLv3 for the open repository and Author's Official EULA + CLC for Microsoft Store packages), complete bilingual documentation, and a professional modular CTest/QtTest engineering test suite in tests/.
+
+New Features, Adjustments, and Improvements
+1. Migration to C++23 and Qt 6.12.0 (Dual MSVC + MinGW Toolchains)
+- Language standard elevated to C++23 across CMakeLists.txt, CMakePresets.json, mocks/CMakeLists.txt, and VS Code configurations.
+- Upgraded cleanly to Qt 6.12.0 (Core, Gui, Widgets, Sql, PrintSupport, LinguistTools, and Test) with multi-config imported location lookup (RELEASE / RELWITHDEBINFO / DEBUG) for qmake, lrelease, and windeployqt.
+- Isolated CMake presets for the desktop app (qt-msvc -> builds/build_AGENDA_msvc, qt-mingw -> builds/build_AGENDA_mingw) and the test suite (suite-msvc -> builds/build_suite_msvc, suite-mingw -> builds/build_suite_mingw), enforcing strict PATH sanitization across MSVC 14.52 and MinGW 15.1.0 (placing GCC 15.1.0 runtime DLLs ahead of older DLLs).
+
+2. Ultra-Clean External Distribution & Lean Inno Setup Installers
+- DeployAgenda target configured with targeted windeployqt exclusions (--skip-plugin-types and --exclude-plugins) plus surgical selection of required runtime assets and .qm translation catalogs.
+- MSVC distribution bundles the 5 app-local Visual C++ Runtime DLLs (msvcp140.dll, msvcp140_1.dll, msvcp140_2.dll, vcruntime140.dll, vcruntime140_1.dll), while MinGW bundles the 3 GCC 15.1.0 DLLs (libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll).
+- Removed embedded vc_redist.x64.exe (~18 MB) from repo/Agenda_Avaliacoes_Academicas*.iss with preprocessor guards, dramatically slimming the MSVC installer below the MinGW installer size.
+
+3. Dual Licensing, Privacy & Complete Documentation (docs/ and source/assets/)
+- Adopted GNU AGPLv3 (SPDX: AGPL-3.0-only) in LICENSE for public source code while granting developers complete freedom to adapt source/assets/ institutional docs, alongside the Author's Official EULA and CLC for official Microsoft Store distribution.
+- Added comprehensive bilingual (pt-BR / en-US) root docs (README.md, MANUAL.md, OBSERVACAO.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md), technical guides under docs/ (architecture.md, compliance.md, licensing.md, privacy-policy.md, release-v2026.7.20.0.md, security-model.md, suggested-issues.md, technical-audit-and-roadmap.md, user-guide.md), .github/ templates, and updated compliance assets under source/assets/ (including full license texts under source/assets/LICENSES/).
+
+4. Professional Modular Test Suite (tests/)
+- Extracted static library target AgendaCore in CMakeLists.txt so the main executable and all test suites link identical compiled code without altering product source files.
+- Implemented 9 isolated CTest/QtTest suites in tests/ covering Qt 6.12.0 frameworks and plugins, utility modules / concurrency / log rotation / TrialManager, academic curriculum & color dictionaries, listas.db SQLite CRUD, Banco_Dados integration, GerenciamentoAtividades CRUD & scale benchmark, .qm translations & docs/licensing audits, end-to-end GUI/modal/PDF workflows, and VersionEditor / lrelease auxiliary verification.
+- Added VS Code tasks in .vscode/tasks.json ("Qt6: Compilar e Executar SUITE (MSVC)" and "Qt6: Compilar e Executar SUITE (MinGW)") with zero external deployment generated for tests.
+
+_________________________________________________
+
+RELEASE NOTES: Version 2026.4.24.0
+April 24, 2026
+
+Summary:
+This release consolidates the final refactoring of the Academic Assessment Schedule application, originating from the original Python project (`../Python/Agenda_Avaliacoes_Academicas`). The application has been reorganized as a C++/Qt 6 project, featuring CMake, Ninja, MSVC and MinGW support, dedicated VS Code tasks, automated external distribution, and custom auxiliary tools for version and translation maintenance.
+
+Key Deliverables:
+- Modular source code organized under `source/` (BancoDeDados, GerenciamentoAtividades, GerenciamentoInterfaceGrafica, language, utils).
+- Bilingual support (pt_BR / en_US), PDF generation via Qt PrintSupport / QPdfWriter, and a local SQLite database (`atividades.db` and `listas.db`).
+- Auxiliary tools under `mocks/` (VersionEditor and CompileTranslations), maintained as a separate project through `mocks/CMakeLists.txt`.
+
+_________________________________________________
+
+RELEASE NOTES: Version: 2026.4.23.0
+April 23, 2026
+
+Summary:
+Added subject "Social Engineering" (TH045) to the Civil Engineering curriculum, free-text cascading list persistence in listas.db, and the Settings > Delete Item menu with per-category submenus and localized confirmation buttons.
+
+_________________________________________________
+
+RELEASE NOTES: Version: 0.0.1.0
+October 09, 2025
+
+First public release — ACADEMIC EVALUATION SCHEDULE (original Python/PySide6 prototype featuring chronological listing, color highlighting, and PDF export).

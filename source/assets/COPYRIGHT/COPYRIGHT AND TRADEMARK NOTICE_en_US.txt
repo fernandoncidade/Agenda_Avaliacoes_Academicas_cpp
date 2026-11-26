@@ -1,0 +1,17 @@
+COPYRIGHT AND TRADEMARK NOTICE
+==============================
+
+Copyright (C) 2025-2026 Fernando Nillsson Cidade. All rights reserved.
+Version 2026.11.22.0, November 22, 2026
+
+The ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) software and its associated original documentation, including source code, graphical user interface, academic course/subject catalogs, technical manuals, legal texts, translation files, and icons, are the intellectual property of Fernando Nillsson Cidade. All third-party libraries and components (including the Qt 6.12.0 framework under GNU LGPLv3, the SQLite engine in the Public Domain, Windows SDK libraries, and MSVC / MinGW-w64 runtimes) belong to their respective authors and copyright holders.
+
+The name "AGENDA DE AVALIAÇÕES ACADÊMICAS" ("Academic Evaluation Schedule") is a project reference mark created by Fernando Nillsson Cidade.
+
+OPEN-SOURCE CLARIFICATION AND DEVELOPER GUIDELINES:
+----------------------------------------------------
+1. Purpose of This Documentation: The documentation located in the source/assets/ directory (including ABOUT, CLC, COPYRIGHT, EULA, LICENSES, MANUAL, NOTICES, PRIVACY_POLICY, and RELEASE) has been authored to comply rigorously with publishing, compliance, and distribution requirements on the Microsoft Store and signed Windows installers.
+2. Full Freedom for Developers: The author explicitly authorizes developers, contributors, and forks to make any changes, removals, additions, and general modifications to this documentation and the associated codebase, granting complete freedom to adapt them as appropriate, provided they comply with applicable laws, guidelines, and regulations in their respective jurisdictions and publishing platforms.
+3. Open-Source Codebase (GNU AGPLv3 License): The complete source code is publicly available in this repository under the GNU Affero General Public License v3 (AGPLv3). Anyone is completely free to inspect, compile, build independent binaries, extend, and redistribute their own builds under GNU AGPLv3 terms.
+4. Restriction on Author's Official Binaries: Only the binary compiled, packaged, digitally signed, and officially distributed by the author (Fernando Nillsson Cidade), notably the official Microsoft Store package, is NOT authorized for unauthorized paid commercial resale, redistribution, or trademark misappropriation by third parties (noting that reverse engineering is unnecessary, as the original source code is already fully and openly available in the repository).
+5. Free Auxiliary Use and Legal Disclaimer ("AS IS"): Users may utilize the application as they see fit as a personal and academic auxiliary tool for organizing assessment dates, and not as an infallible substitute for official institutional academic calendars. Due to natural software limitations, human error, or possible bugs in code or syllabus catalogs, users should always verify deadlines, classes, and exam dates against official university/school records and keep backups of exported PDFs and local SQLite databases. Should the user choose to rely exclusively on the application for academic commitments or professional workflows, all consequences remain solely the user's responsibility. The software is supplied "AS IS" without express or implied warranties (Official EULA, Brazilian Law No. 9.609/1998, and GNU AGPLv3 Sections 15–16), with author liability disclaimed to the maximum extent permitted by law.

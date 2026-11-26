@@ -1,0 +1,39 @@
+COMMERCIAL LICENSING CLARIFICATION AND SUPPORT TERMS — ACADEMIC EVALUATION SCHEDULE
+Version: 2026.11.22.0
+Date: November 22, 2026
+
+Author and Developer: Fernando Nillsson Cidade (Individual Developer)
+Support & Contact Email: linceu_lighthouse@outlook.com
+Official Website / Repository: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp
+
+--------------------------------------------------------------------------------
+
+1. OPEN SOURCE CODEBASE AND TRANSPARENCY (DUAL LICENSING):
+The complete source code of this project is publicly published on GitHub under the GNU Affero General Public License v3 (GNU AGPLv3, LICENSE file). Any individual or organization is granted full freedom to inspect, audit, compile, modify, and build derivative works from the source code under GNU AGPLv3 terms.
+For institutional compliance documentation stored under source/assets/ (ABOUT, CLC, COPYRIGHT, EULA, LICENSES, NOTICES, PRIVACY_POLICY, and RELEASE), the author additionally grants developers and forks complete freedom to alter, delete, add, and adapt these texts in their own builds and publishing platforms.
+
+2. OFFICIAL MICROSOFT STORE EDITION AND CLEAN UNINSTALLATION:
+The author may officially distribute ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) on the Microsoft Store under the author's Official EULA (source/assets/EULA/EULA_en_US.txt) and signed Windows installers.
+The package supports clean uninstallation at any time through Windows Settings or the Start Menu without leaving hidden background processes or services running.
+
+3. TECHNICAL SUPPORT POLICY AND MICROSOFT NON-COVERAGE:
+Development and maintenance are carried out by the author as a personal and educational initiative in C++23, Qt 6.12.0, and local SQLite persistence. Therefore:
+a) Microsoft does NOT provide customer or technical support for ACADEMIC EVALUATION SCHEDULE, and the Microsoft Privacy Statement does not cover this application (its own Privacy Policy available under PRIVACY_POLICY applies exclusively);
+b) Any voluntary technical support provided by the author (individual developer) takes place exclusively via email (linceu_lighthouse@outlook.com) and publicly through the Issues and Discussions tabs of the official GitHub repository;
+c) Support is offered strictly on a voluntary best-effort basis according to author availability, with no phone support, guaranteed response SLA, or 24/7 remote access.
+
+4. AUXILIARY ACADEMIC SCOPE AND DISCLAIMER ("AS IS"):
+ACADEMIC EVALUATION SCHEDULE is designed to consolidate, chronologically sort, color-highlight, and export to PDF user-entered assessment schedules, serving as an auxiliary study planning utility:
+a) Preloaded course, syllabus, semester, and subject catalogs are illustrative/auxiliary and may not match official curriculum changes at every educational institution;
+b) Users should always confirm official deadlines with instructors and institutional academic portals and maintain regular backups of local SQLite databases and exported PDF files;
+c) The Software is supplied "AS IS", with all faults and without warranties (Official EULA, Brazilian Law No. 9.609/1998, and GNU AGPLv3 Sections 15–16).
+
+5. OPTIONAL INSTITUTIONAL SERVICES AND CUSTOM LICENSING:
+No separate commercial license is required for ordinary use, study, modification, or redistribution under GNU AGPLv3.
+For academic institutions or organizations seeking:
+- Dedicated institutional support, computer-lab deployment assistance, or tailored curriculum catalog integration;
+- Alternative commercial licensing outside GNU AGPLv3 copyleft obligations for closed proprietary distributions (where applicable);
+- Express brand/trademark authorization for official institutional distributions;
+
+Please contact the author directly by email at:
+linceu_lighthouse@outlook.com

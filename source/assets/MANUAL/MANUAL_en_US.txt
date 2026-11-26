@@ -1,0 +1,24 @@
+USER MANUAL — ACADEMIC EVALUATION SCHEDULE
+Version: 2026.11.22.0
+
+1. OVERVIEW
+ACADEMIC EVALUATION SCHEDULE (AGENDA DE AVALIAÇÕES ACADÊMICAS) organizes semester assessments in chronological order with subject color coding, local SQLite storage, language-scoped custom lists, and PDF export.
+
+2. REGISTERING ASSESSMENTS AND CASCADING LISTS
+- Course, Syllabus, Semester, Subject, Class, Type of Assessment Activity, and Activity Sequence support choosing from built-in catalogs OR typing custom free-text entries.
+- Clicking "Register Entries" automatically saves any custom entries into listas.db (scoped to pt_BR or en_US) and records the assessment in atividades.db using the selected calendar date (dd/MM/yyyy).
+
+3. EDITING, DELETING, AND SCHEDULE MAINTENANCE
+- "Edit Item(s)": select one or more scheduled items and update date, type, sequence, subject, or class.
+- "Delete Item(s)": check items to remove and confirm removal from atividades.db.
+- "Clear Last Entry": deletes the most recently inserted record by highest ID.
+- "Clear All": removes all assessments from the database and clears the display box.
+- Settings > Delete Item: removes individual custom items from listas.db organized by category submenu.
+
+4. COLORS, LANGUAGES, AND PDF EXPORT
+- Settings > Colors: switches between "Colorful" (subject color highlights) and "Black" (monochrome), saved to config.json.
+- Settings > Languages: switches live between Português (Brasil) and English (United States), saved to language.json.
+- "Export to PDF": renders a formatted chronological PDF document via Qt PrintSupport / QPdfWriter.
+
+5. LOCAL STORAGE AND CLEAN UNINSTALLATION
+All records stay locally under %LOCALAPPDATA%\AgendaAvaliacoesAcademicas\ (atividades.db, listas.db, config.json, language.json, and logs/file_agenda_*.log). Zero data ever leaves the workstation. Clean uninstallation is supported through Windows Settings or the Start Menu.

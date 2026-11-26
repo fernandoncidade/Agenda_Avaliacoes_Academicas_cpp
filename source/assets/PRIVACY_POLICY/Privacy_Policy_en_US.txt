@@ -1,0 +1,43 @@
+PRIVACY POLICY — ACADEMIC EVALUATION SCHEDULE
+Last updated: November 22, 2026
+Version: 2026.11.22.0
+
+Your privacy and exclusive control over your academic scheduling records are foundational principles of ACADEMIC EVALUATION SCHEDULE ("Software" or "Application"). This Privacy Policy clearly explains how the application operates locally on your device.
+
+INDEPENDENCE FROM MICROSOFT PRIVACY STATEMENT:
+Microsoft does NOT provide a default privacy policy for ACADEMIC EVALUATION SCHEDULE, and this Software is NOT covered by any Microsoft privacy policy or the Microsoft Privacy Statement (https://www.microsoft.com/en-us/privacy/privacystatement). Data collected separately by Microsoft through the Microsoft Store platform (such as searches, downloads, updates, uninstalls, and ratings/reviews linked to your Microsoft account) or Windows OS diagnostic settings is governed solely by Microsoft's Privacy Statement. All operations performed within ACADEMIC EVALUATION SCHEDULE are governed exclusively by this developer Privacy Policy.
+
+1. Foundational Principle: 100% Local-First and Offline Architecture
+ACADEMIC EVALUATION SCHEDULE is engineered under Privacy by Default and Local Operation. All assessment entries, custom lists, color preferences, language selection, schedule rendering, and PDF exports run 100% offline on the user's workstation. Zero information is transmitted, uploaded, synchronized, or shared with remote servers, cloud services, or third parties.
+
+2. Information Processed Locally by the Software
+The Application processes solely data deliberately entered by the user and local operational preferences:
+- Assessment Activity Data: Course, syllabus, semester, subject, class, assessment type, sequence, and activity date stored locally in the SQLite database "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\atividades.db".
+- Cascading Custom Lists: Free-text custom entries added by the user for courses, syllabi, semesters, subjects, classes, types, and sequences per language, saved in the local SQLite database "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\listas.db".
+- Local Preferences: Color highlight mode ("coloridas" or "preto") saved in "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\config.json" and active UI language ("pt_BR" or "en_US") saved in "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\language.json".
+- Local Diagnostic Logs: Local runtime log files written under "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\logs\file_agenda_*.log" (with automatic rotation retaining at most 10 recent files).
+- Exported Documents: PDF files rendered via QPdfWriter solely to folders and filenames explicitly selected by the user through Windows file dialogs.
+
+The Software DOES NOT request, collect, track, or upload personally identifiable information to external servers, ad networks, or analytics SDKs.
+
+3. Legal Basis and Declared Capability (LGPD / GDPR / Microsoft Store)
+Strictly local processing solely fulfills user-requested academic organization features (LGPD Art. 7, V and IX — Brazilian Law No. 13.709/2018; legitimate interest and user-initiated local execution under GDPR).
+In Microsoft Store MSIX packaging, the manifest declares only the restricted capability required for native Win32 C++23 / Qt 6.12.0 execution and standard Windows file dialogs, with zero access to camera, microphone, precise location, or contacts.
+
+4. Local Storage, Zero Network Connectivity, and No Third-Party Sharing
+- Zero Telemetry: The default executable includes no user accounts, trackers, advertisements, or background HTTP/HTTPS requests.
+- Explicit User Sharing: Sharing exported PDF files with peers or institutions occurs solely by the user's deliberate external action outside the Application.
+- Qt 6 and SQLite Runtime Libraries: Bundled Qt 6.12.0 dynamic libraries (Core, Gui, Widgets, Sql/QSQLITE, and PrintSupport) support local UI rendering, SQLite persistence, and PDF output only.
+
+5. User Control Rights and Clean Uninstallation
+You retain full ownership and control over your local records and may:
+- Edit, clear, or delete individual activities and custom list items directly inside the GUI;
+- Export PDF schedules or directly back up "%LOCALAPPDATA%\AgendaAvaliacoesAcademicas\";
+- Cleanly uninstall and remove the Application at any time via Windows Settings -> Apps -> Installed Apps (or Start Menu -> Uninstall), without leaving hidden background processes or services running.
+
+6. Licensing & Privacy Contact (Individual Developer)
+Fernando Nillsson Cidade
+Email: linceu_lighthouse@outlook.com
+Official Repository: https://github.com/fernandoncidade/Agenda_Avaliacoes_Academicas_cpp
+Licensing: GNU AGPLv3 (source code in LICENSE) / Author's Official EULA (Microsoft Store package).
+Notice: Microsoft provides no customer support and no privacy coverage for this application.
